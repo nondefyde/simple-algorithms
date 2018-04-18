@@ -6,16 +6,15 @@ findConsecutiveRuns = (range, array) => {
     const result = [];
     for (let i = 0; i < array.length; i++) {
         let consecutive = array.slice(i, (i + range));
-        let temp = [];
+        let count = 1;
         let difference = 0;
-        temp.push(consecutive[0]);
         for (let j = 1; j < consecutive.length; j++) {
             difference = (difference === 0) ? consecutive[0] - consecutive[j] : difference;
             if (consecutive[j - 1] - consecutive[j] !== difference || Math.abs(difference) !== 1)
                 break;
-            temp.push(consecutive[j]);
+            count++
         }
-        if ((temp.length === range)) {
+        if ((count === range)) {
             result.push(i);
         }
     }
