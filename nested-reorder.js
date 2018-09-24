@@ -23,7 +23,7 @@ reorderNestedArrayObject = (array, positions) => {
 		}
 		return -1;
 	};
-	const swapArray = (array, previous, current) => {
+	const swapArrayIndex = (array, previous, current) => {
 		const updatedArray = [...array];
 		const temp = updatedArray[previous];
 		updatedArray[previous] = updatedArray[current];
@@ -40,7 +40,7 @@ reorderNestedArrayObject = (array, positions) => {
 				updatedQuestion[i].nested = reOrder(updatedQuestion[i].nested, pos[position][updatedQuestion[i]._id])
 			}
 			if (position !== i && swapped.indexOf(position) < 0 && swapped.indexOf(i) < 0) {
-				updatedQuestion = swapArray(updatedQuestion, i, position);
+				updatedQuestion = swapArrayIndex(updatedQuestion, i, position);
 			}
 		}
 		return updatedQuestion;
