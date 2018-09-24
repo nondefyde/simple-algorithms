@@ -1,9 +1,14 @@
-// Given an array of unsorted positive integers, write a
-// function that finds runs of 3 consecutive numbers (ascending or descending)
-// and returns the indices where such runs begin. If no such runs are found, return null.
-// result =  [0,4,6,7];
-reorderNestedArrayObject = (questions, positions) => {
-	if (questions.length !== positions.length) {
+// This should be able to reOrder any level
+// of nested array. But only 3 levels have been tested
+
+/**
+ *
+ * @param array the nested array to re-order
+ * @param positions the new positions
+ * @return {string}
+ */
+reorderNestedArrayObject = (array, positions) => {
+	if (array.length !== array.length) {
 		return 'cannot reorder questions';
 	}
 	const findIndex = (positions, value, index) => {
@@ -31,8 +36,8 @@ reorderNestedArrayObject = (questions, positions) => {
 		const swapped = [];
 		for (let i = 0; i < updatedQuestion.length; i++) {
 			const position = findIndex(pos, updatedQuestion[i]._id, 0);
-			if (updatedQuestion[i].columns) {
-				updatedQuestion[i].columns = reOrder(updatedQuestion[i].columns, pos[position][updatedQuestion[i]._id])
+			if (updatedQuestion[i].nested) {
+				updatedQuestion[i].nested = reOrder(updatedQuestion[i].nested, pos[position][updatedQuestion[i]._id])
 			}
 			if (position !== i && swapped.indexOf(position) < 0 && swapped.indexOf(i) < 0) {
 				updatedQuestion = swapArray(updatedQuestion, i, position);
@@ -40,16 +45,17 @@ reorderNestedArrayObject = (questions, positions) => {
 		}
 		return updatedQuestion;
 	};
-	return reOrder(questions, positions);
+	return reOrder(array, positions);
 };
 
-const questions = [
+// This array with nested object
+const array = [
 	{
 		_id: 3,
-		columns: [
+		nested: [
 			{_id: 5},
 			{
-				_id: 4, columns: [
+				_id: 4, nested: [
 					{_id: 11},
 					{_id: 10},
 					{_id: 9}
@@ -61,5 +67,7 @@ const questions = [
 	{_id: 2},
 	{_id: 1}
 ];
+
+// This is the structure for the array positions
 const positions = [1, 2, {3: [{4: [9, 10, 11]}, 5, 6]}];
-console.log("result : ", JSON.stringify(reorderNestedArrayObject(questions, positions)));
+console.log("result : ", JSON.stringify(reorderNestedArrayObject(array, positions)));

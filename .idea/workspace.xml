@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="435c6462-2e85-4082-b4c7-ad3c32dd6a04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/anagram.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capital.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complimentary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/countbit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/format.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nested-reorder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polygon.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyscho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subarray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sublist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suffix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.js" afterDir="false" />
+    <list default="true" id="435c6462-2e85-4082-b4c7-ad3c32dd6a04" name="Default" comment="changed array to variable, a simple memory management and optimization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nested-reorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/nested-reorder.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,8 +38,11 @@
       <file leaf-file-name="nested-reorder.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nested-reorder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+            <state relative-caret-position="69">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,7 +199,7 @@
       <workItem from="1531513717422" duration="4447000" />
       <workItem from="1531603183320" duration="1476000" />
       <workItem from="1531605643274" duration="981000" />
-      <workItem from="1537721345678" duration="4603000" />
+      <workItem from="1537721345678" duration="7298000" />
     </task>
     <task id="LOCAL-00001" summary="changed array to variable, a simple memory management and optimization">
       <created>1524095194786</created>
@@ -230,7 +212,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74278000" />
+    <option name="totallyTimeSpent" value="76973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -241,7 +223,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36121213" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.368356" />
       <window_info anchor="bottom" id="RNConsole" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -638,8 +620,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nested-reorder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        <state relative-caret-position="69">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
