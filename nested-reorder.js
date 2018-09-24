@@ -8,7 +8,7 @@
  * @return {string}
  */
 reorderNestedArrayObject = (array, positions) => {
-	if (array.length !== array.length) {
+	if (array.length !== positions.length) {
 		return 'cannot reorder questions';
 	}
 	const findIndex = (positions, value, index) => {
