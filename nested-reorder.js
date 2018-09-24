@@ -13,11 +13,7 @@ reorderNestedArrayObject = (array, positions) => {
 	}
 	const findIndex = (positions, value, index) => {
 		for (let i = index; i < positions.length; i++) {
-			if (typeof positions[i] === 'object') {
-				if (positions[i][value]) {
-					return i;
-				}
-			} else if (value === positions[i]) {
+			if (positions[i][value]) {
 				return i;
 			}
 		}
@@ -69,5 +65,5 @@ const array = [
 ];
 
 // This is the structure for the array positions
-const positions = [1, 2, {3: [{4: [9, 10, 11]}, 5, 6]}];
+const positions = [{1: []}, {2: []}, {3: [{4: [{9: []}, {10:[]}, {11:[]}]}, {5: []}, {6: []}]}];
 console.log("result : ", JSON.stringify(reorderNestedArrayObject(array, positions)));
